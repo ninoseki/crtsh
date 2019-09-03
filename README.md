@@ -9,7 +9,7 @@
 ## Installation
 
 ```bash
-gem install crtsh
+gem install crtsh-rb
 ```
 
 ## Usage

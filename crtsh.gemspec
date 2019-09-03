@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "crtsh/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "crtsh"
+  spec.name          = "crtsh-rb"
   spec.version       = Crtsh::VERSION
   spec.authors       = ["Manabu Niseki"]
   spec.email         = ["manabu.niseki@gmail.com"]
