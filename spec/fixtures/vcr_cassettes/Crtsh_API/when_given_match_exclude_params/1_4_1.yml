@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://crt.sh/?exclude=expired&identity=crt.sh&match=LIKE&output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - crt.sh
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Jan 2020 12:47:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3700'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      Expect-Ct:
+      - preload
+      X-Ccacdn-Proxy-Id:
+      - bddpinlb2
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '[{"issuer_ca_id":1582,"issuer_name":"C=GB, ST=Greater Manchester, L=Salford,
+        O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2","name_value":"*.crt.sh\ncrt.sh","id":2202554056,"entry_timestamp":"2019-12-07T03:55:53.116","not_before":"2019-12-07T00:00:00","not_after":"2020-06-14T23:59:59"},{"issuer_ca_id":1582,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain
+        Validation Secure Server CA 2","name_value":"*.crt.sh\ncrt.sh","id":2202552535,"entry_timestamp":"2019-12-07T03:55:32.759","not_before":"2019-12-07T00:00:00","not_after":"2020-06-14T23:59:59"},{"issuer_ca_id":7967,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Domain
+        Validation Secure Server CA 2","name_value":"*.crt.sh\ncrt.sh","id":2202512826,"entry_timestamp":"2019-12-07T03:44:36.726","not_before":"2019-12-07T00:00:00","not_after":"2020-06-14T23:59:59"},{"issuer_ca_id":7967,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Domain
+        Validation Secure Server CA 2","name_value":"*.crt.sh\ncrt.sh","id":2202509969,"entry_timestamp":"2019-12-07T03:44:22.248","not_before":"2019-12-07T00:00:00","not_after":"2020-06-14T23:59:59"},{"issuer_ca_id":105492,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Extended
+        Validation Secure Server CA","name_value":"crt.sh","id":2172983785,"entry_timestamp":"2019-12-06T21:06:47.407","not_before":"2019-12-06T00:00:00","not_after":"2021-01-04T23:59:59"},{"issuer_ca_id":105492,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Extended
+        Validation Secure Server CA","name_value":"crt.sh","id":2172983659,"entry_timestamp":"2019-12-06T21:06:27.446","not_before":"2019-12-06T00:00:00","not_after":"2021-01-04T23:59:59"},{"issuer_ca_id":105493,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain
+        Validation Secure Server CA","name_value":"crt.sh\nwww.crt.sh","id":2200998771,"entry_timestamp":"2019-12-06T14:34:32.35","not_before":"2019-12-06T00:00:00","not_after":"2020-03-05T23:59:59"},{"issuer_ca_id":105493,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain
+        Validation Secure Server CA","name_value":"crt.sh\nwww.crt.sh","id":2200998473,"entry_timestamp":"2019-12-06T14:34:17.421","not_before":"2019-12-06T00:00:00","not_after":"2020-03-05T23:59:59"},{"issuer_ca_id":105492,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Extended
+        Validation Secure Server CA","name_value":"crt.sh\nwww.crt.sh","id":1727279813,"entry_timestamp":"2019-07-31T22:10:46.578","not_before":"2019-07-31T00:00:00","not_after":"2021-07-30T23:59:59"},{"issuer_ca_id":105492,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Extended
+        Validation Secure Server CA","name_value":"crt.sh\nwww.crt.sh","id":1727239898,"entry_timestamp":"2019-07-31T22:10:32.477","not_before":"2019-07-31T00:00:00","not_after":"2021-07-30T23:59:59"},{"issuer_ca_id":1113,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Extended
+        Validation Secure Server CA","name_value":"crt.sh","id":802815326,"entry_timestamp":"2018-10-01T09:42:44.974","not_before":"2018-10-01T00:00:00","not_after":"2020-09-30T23:59:59"},{"issuer_ca_id":1113,"issuer_name":"C=GB,
+        ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Extended
+        Validation Secure Server CA","name_value":"crt.sh","id":802815291,"entry_timestamp":"2018-10-01T09:42:31.081","not_before":"2018-10-01T00:00:00","not_after":"2020-09-30T23:59:59"}]'
+    http_version: 
+  recorded_at: Sun, 12 Jan 2020 12:47:37 GMT
+recorded_with: VCR 5.0.0

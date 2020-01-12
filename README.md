@@ -18,7 +18,10 @@ gem install crtsh-rb
 require "crtsh"
 
 api = Crtsh::API.new
-res = api.search("crt.sh")
+api.search("crt.sh")
+api.search("crt.sh", match: "LIKE")
+api.search("crt.sh", exclude: "expired")
+api.search("crt.sh", match: "LIKE", exclude: "expired")
 ```
 
 ## Contributing

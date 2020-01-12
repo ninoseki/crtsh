@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://crt.sh/?identity=crt.sh&output=json
+    uri: https://crt.sh/?identity=crt.sh&match=LIKE&output=json
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 12 Jan 2020 12:26:44 GMT
+      - Sun, 12 Jan 2020 12:45:46 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -141,5 +141,5 @@ http_interactions:
         ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Extended
         Validation Secure Server CA","name_value":"crt.sh","id":7842942,"entry_timestamp":"2015-06-02T15:02:15.918","not_before":"2015-06-02T00:00:00","not_after":"2017-05-06T23:59:59"}]'
     http_version: 
-  recorded_at: Sun, 12 Jan 2020 12:26:43 GMT
+  recorded_at: Sun, 12 Jan 2020 12:45:45 GMT
 recorded_with: VCR 5.0.0

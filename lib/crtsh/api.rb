@@ -9,8 +9,23 @@ module Crtsh
     HOST = "crt.sh"
     BASE_URL = "https://#{HOST}"
 
-    def search(query)
-      get("/", q: query, output: "json") { |json| json }
+    #
+    # Search crt.sh by a given identity
+    #
+    # @param [String] identity
+    # @param [String, nil] match "=", "ILIKE", "LIKE", "single", "any" or nil
+    # @param [String, nil] exclude "expired" or nil
+    #
+    # @return [Hash]
+    #
+    def search(identity, match: nil, exclude: nil)
+      params = {
+        identity: identity,
+        match: match,
+        exclude: exclude,
+        output: "json",
+      }.compact
+      get("/", params) { |json| json }
     end
 
     private
