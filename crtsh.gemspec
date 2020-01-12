@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Manabu Niseki"]
   spec.email         = ["manabu.niseki@gmail.com"]
 
-  spec.summary       = "crt.sh API client for Ruby"
-  spec.description   = "crt.sh API client for Ruby"
+  spec.summary       = "crt.sh API wrapper for Ruby"
+  spec.description   = "crt.sh API wrapper for Ruby"
   spec.homepage      = "https://github.com/ninoseki/crtsh"
   spec.license       = "MIT"
 
