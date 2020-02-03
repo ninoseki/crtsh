@@ -17,11 +17,26 @@ gem install crtsh-rb
 ```ruby
 require "crtsh"
 
+# Interact with Web API
 api = Crtsh::API.new
 api.search("crt.sh")
 api.search("crt.sh", match: "LIKE")
 api.search("crt.sh", exclude: "expired")
 api.search("crt.sh", match: "LIKE", exclude: "expired")
+
+# Interact with DB
+db = Crtsh::DB.new
+sql = """
+SELECT digest(certificate.certificate, 'sha256') sha256
+FROM certificate_identity, certificate
+WHERE certificate.id = certificate_identity.certificate_id
+AND x509_notAfter(certificate.certificate) > statement_timestamp()
+AND reverse(lower(certificate_identity.name_value)) LIKE reverse(lower($1))
+LIMIT 10
+"""
+# Crtsh::DB#connection returns PG::Connection
+result = db.connection.exec_params(sql, ["github.com"])
+p result.values
 ```
 
 ## Contributing
