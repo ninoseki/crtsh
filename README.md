@@ -1,6 +1,6 @@
 # crtsh
 
-[![Build Status](https://travis-ci.com/ninoseki/crtsh.svg?branch=master)](https://travis-ci.com/ninoseki/crtsh)
+[![Ruby CI](https://github.com/ninoseki/crtsh/actions/workflows/test.yml/badge.svg)](https://github.com/ninoseki/crtsh/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/crtsh/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/crtsh?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/crtsh/badge)](https://www.codefactor.io/repository/github/ninoseki/crtsh)
 
