@@ -15,16 +15,22 @@ gem install crtsh-rb
 ## Usage
 
 ```ruby
+# Interact with Web API
 require "crtsh"
 
-# Interact with Web API
 api = Crtsh::API.new
 api.search("crt.sh")
 api.search("crt.sh", match: "LIKE")
 api.search("crt.sh", exclude: "expired")
 api.search("crt.sh", match: "LIKE", exclude: "expired")
+```
 
+```ruby
 # Interact with DB
+# Note that you have to install pg manually
+# gem install pg
+require "crtsh/db"
+
 db = Crtsh::DB.new
 sql = """
 SELECT digest(certificate.certificate, 'sha256') sha256
